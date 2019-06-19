@@ -1,4 +1,4 @@
-from connectors import Unify
+from src.connectors import Unify
 class DefenceCode(object):
 
     def __init__(self):

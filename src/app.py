@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import request
-from classes import DefenceCode
-from flask_bootstrap import Bootstrap
-
+from src.classes import DefenceCode
 
 app = Flask(__name__)
 
