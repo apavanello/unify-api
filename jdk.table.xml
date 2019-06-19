@@ -1,0 +1,56 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Pipenv (API)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.1" />
+      <homePath value="$USER_HOME$/.local/share/virtualenvs/API-zSmwclIH/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/API-zSmwclIH/lib/python3.7" type="simple" />
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/API-zSmwclIH/lib/python3.7/lib-dynload" type="simple" />
+            <root url="file:///usr/lib/python3.7" type="simple" />
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/API-zSmwclIH/lib/python3.7/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-374243704" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Projects/Wifi/API" IS_PIPENV="true" />
+    </jdk>
+    <jdk version="2">
+      <name value="Pipenv (WEB-API)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="$USER_HOME$/.local/share/virtualenvs/WEB-API-ThDFOGHa/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/WEB-API-ThDFOGHa/lib/python3.7" type="simple" />
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/WEB-API-ThDFOGHa/lib/python3.7/lib-dynload" type="simple" />
+            <root url="file:///usr/lib/python3.7" type="simple" />
+            <root url="file://$USER_HOME$/.local/share/virtualenvs/WEB-API-ThDFOGHa/lib/python3.7/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/79638579" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Projects/Wifi/WEB-API" IS_PIPENV="true" />
+    </jdk>
+  </component>
+</application>
