@@ -1,4 +1,10 @@
-from src.connectors import Unify
+import json
+
+from .connectors import Unify
+
+LOGIN_URL = 'https://wifi.livrariacultura.com.br:8443/api/login'
+
+
 class DefenceCode(object):
 
     def __init__(self):
@@ -12,18 +18,20 @@ class DefenceCode(object):
 
         m_type = self.chk_request_method(request_method)
 
-        response = '''{
-                    "responses": { 
-                                    "Version": "%s" ,
-                                    "Extra": "%s" ,
-                                    "Method": "%s" },
-                    "return code": "%s"
-                                    }''' \
-                                    % (str(version), str(extra_args), str(request_method), str(self.error_code))
+        data = {
+            'responses': {
+                'Version': version,
+                'Extra': extra_args,
+                'Method': request_method,
+            },
+            'return code': self.error_code
+        }
+        response = json.dumps(data)
+
         if self.error_code == "0":
 
             connector = Unify()
-            login_code = connector.login('https://wifi.livrariacultura.com.br:8443/api/login')
+            login_code = connector.login(LOGIN_URL)
 
             response = str(login_code)
         return response

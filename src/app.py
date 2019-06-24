@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import request
-from src.classes import DefenceCode
+from .defence_code import DefenceCode
 from flask_cors import CORS
 
 app = Flask(__name__)
