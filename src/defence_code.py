@@ -8,6 +8,7 @@ LOGIN_URL = 'https://wifi.livrariacultura.com.br:8443/api/login'
 class DefenceCode(object):
 
     def __init__(self):
+
         self.error_code = '0'
 
     def checks(self, version, extra_args, request_method):
