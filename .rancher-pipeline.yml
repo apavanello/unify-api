@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: Unify-api
+      tag: unifyapi
       registry: 127.0.0.1:34072
 - name: Deploy
   steps:
