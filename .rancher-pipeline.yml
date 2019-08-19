@@ -6,7 +6,9 @@ stages:
       buildContext: .
       tag: Unify-api
       registry: 127.0.0.1:34072
+- name: Deploy
+  steps:
   - applyYamlConfig:
-      path: ./deployment.yaml
+      path: ./Deployment.yaml
 timeout: 60
 notification: {}
