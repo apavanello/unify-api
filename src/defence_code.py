@@ -56,7 +56,12 @@ class DefenceCode(object):
         if str(extra_args).upper() == 'TOKEN':
 
             response = 'T'
-
+        
+        elif: str(extra_args).upper() == 'TEST':
+                
+            response = '0'
+            self.error_code = 'API TESTING OK'
+            
         else:
 
             response = '0'
