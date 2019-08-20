@@ -10,5 +10,5 @@ RUN cd /usr/app \
     && pip install -r requirements.txt
 
 WORKDIR /usr/app/src
-
+cmd ["flask", "run", "--host=0.0.0.0"]
 
