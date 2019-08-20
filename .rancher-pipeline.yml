@@ -1,10 +1,11 @@
 stages:
-- name: build
+- name: Publish
   steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: unifi-api-img:${CICD_EXECUTION_SEQUENCE}
-      registry: 127.0.0.1:34072
-timeout: 60
-notification: {}
+      tag: example-unifi:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
