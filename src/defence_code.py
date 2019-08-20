@@ -57,7 +57,7 @@ class DefenceCode(object):
 
             response = 'T'
         
-        elif: str(extra_args).upper() == 'TEST':
+        elif str(extra_args).upper() == 'TEST':
                 
             response = '0'
             self.error_code = 'API TESTING OK'
