@@ -8,8 +8,8 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 5005
-      targetPort: 5005
+      port: 5000
+      targetPort: 5000
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -22,10 +22,6 @@ spec:
   selector:
     matchLabels:
       app: unifi-api
-  template:
-    metadata:
-      labels:
-        app: unifi-api
     spec:
       imagePullSecrets:
       - name: pipeline-docker-registry
@@ -33,4 +29,4 @@ spec:
       - name: unifi-api
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
-        - containerPort: 5005
+        - containerPort: 5000
