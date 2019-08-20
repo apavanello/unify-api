@@ -27,6 +27,8 @@ spec:
       labels:
         app: unifi-api
     spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
       containers:
       - name: unifi-api
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
