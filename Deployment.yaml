@@ -1,10 +1,11 @@
+
 kind: Service
 apiVersion: v1
 metadata:
-  name: unifi-api-service
+  name: unifi-service
 spec:
   selector:
-    app: unifi-api
+    app: unifi
   type: NodePort
   ports:
     - protocol: TCP
@@ -14,14 +15,18 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: unifi-api-server
+  name: example-unifi
   labels:
-    app: unifi-api
+    app: unifi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: unifi-api
+      app: unifi
+  template:
+    metadata:
+      labels:
+        app: unifi
     spec:
       imagePullSecrets:
       - name: pipeline-docker-registry
